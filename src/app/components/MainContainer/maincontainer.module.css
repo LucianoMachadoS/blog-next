@@ -1,0 +1,6 @@
+.main {
+  max-width: 96rem;
+  font-size: var(--font-size-medium);
+  margin: 0 auto;
+  padding: var(--spacing-medium);
+}

@@ -1,0 +1,22 @@
+.container {
+  transition: opacity 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.postCardCover {
+  margin-bottom: var(--spacing-small);
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.PostCardHeading {
+  font-size: var(--font-size-medium);
+
+  a {
+    color: var(--color-darkGray);
+  }
+}
