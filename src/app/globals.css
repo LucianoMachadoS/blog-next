@@ -5,7 +5,7 @@
   --color-white: #fafafa;
   --color-lightGray: #dddddd;
   --color-gray: #999999;
-  --color-darkGray: #333333; /* Corrigido */
+  --color-darkGray: #333333;
 
   /* Spacings */
   --spacing-small: 1rem;
@@ -13,9 +13,10 @@
   --spacing-large: 3rem;
 
   /* Font Sizes */
-  --font-size-small: 1.2rem; /* Ajustei para ficar claro que é size */
+  --font-size-small: 1.2rem;
   --font-size-medium: 1.8rem;
   --font-size-large: 2rem;
+  --font-size-superlarge: 4rem;
 }
 
 body {
@@ -31,6 +32,13 @@ body {
   padding: 0;
   margin: 0;
   outline: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 a {

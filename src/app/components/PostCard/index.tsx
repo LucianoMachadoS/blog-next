@@ -13,14 +13,12 @@ export const PostCard = ({ slug, title, cover, width }: PostCardProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.postCardCover}>
-        <Link href="/post/[slug]" as={`/post/${slug}`}>
+        <Link href={`/post/${slug}`}>
           <Image src={cover} alt={title} width={width} height={300} />
         </Link>
       </div>
       <div className={styles.postCardHeading}>
-        <Link href="/post/[slug]" as={`/post/${slug}`}>
-          {title}
-        </Link>
+        <Link href={`/post/${slug}`}>{title}</Link>
       </div>
     </div>
   );

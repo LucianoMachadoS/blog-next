@@ -1,5 +1,6 @@
 import { PostData } from '@/app/domain/posts/post';
 import { fetchAPI } from './fetch-helper';
+import { PAGE_SIZE } from '@/app/config/app-config';
 
 export const getAllPosts = async (): Promise<PostData[]> => {
   const urlParams = {
@@ -15,7 +16,7 @@ export const getAllPosts = async (): Promise<PostData[]> => {
     },
     pagination: {
       page: 1,
-      pageSize: 30,
+      pageSize: PAGE_SIZE,
     },
   };
 
