@@ -14,8 +14,7 @@ export default function PostDetails({
 }: PostDetailsProps) {
   return (
     <div className={styles.postDetails}>
-      Publicado em <Date date={date} />
-      por {author} | {category}
+      Publicado em <Date date={date} /> por {author} | {category}
     </div>
   );
 }

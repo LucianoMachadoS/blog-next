@@ -1,0 +1,25 @@
+.postContainer {
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: var(--spacing-medium) 0;
+  }
+
+  ul,
+  ol {
+    margin-top: var(--spacing-medium);
+  }
+
+  pre {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--color-lightGray);
+    color: var(--color-darkGray);
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) 0;
+    line-height: 1.5;
+    font-size: var(--font-size-medium);
+  }
+}
