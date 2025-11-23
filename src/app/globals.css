@@ -50,3 +50,17 @@ a {
     opacity: 0.6s;
   }
 }
+
+#cusdis_thread {
+  width: 100%;
+}
+
+/* Força o iframe a não ter bordas e ocupar a largura total */
+#cusdis_thread iframe {
+  width: 100% !important;
+  border: none !important;
+  display: block !important;
+
+  /* Opcional: Se a rolagem for mínima (coisa de 1px ou 2px), isso esconde */
+  overflow: hidden !important;
+}
