@@ -11,7 +11,7 @@ export type PostCardProps = {
 
 export const PostCard = ({ slug, title, cover, width }: PostCardProps) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.postCard}>
       <div className={styles.postCardCover}>
         <Link href={`/post/${slug}`}>
           <Image src={cover} alt={title} width={width} height={300} />

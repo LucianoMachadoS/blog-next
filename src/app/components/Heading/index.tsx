@@ -5,5 +5,5 @@ export type HeadingProps = {
 };
 
 export const Heading = ({ children }: HeadingProps) => {
-  return <h2 className={styles.container}>{children}</h2>;
+  return <h2 className={styles.heading}>{children}</h2>;
 };

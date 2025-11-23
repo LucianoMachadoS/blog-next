@@ -1,7 +1,8 @@
 .img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   margin-bottom: var(--spacing-medium);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
