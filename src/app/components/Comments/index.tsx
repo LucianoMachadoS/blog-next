@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import { SITE_URL_LOCAL } from '@/app/config/app-config';
+import { API_URL } from '@/app/config/app-config';
 import styles from './comments.module.css';
 import { useEffect } from 'react';
 import { Heading } from '../Heading';
@@ -43,7 +43,7 @@ export const Comments = ({ slug, title }: CommentsProps) => {
         data-host="https://cusdis.com"
         data-app-id="d5aaf2c6-7e3d-40c7-9515-7c6d89018a89"
         data-page-id={slug}
-        data-page-url={`${SITE_URL_LOCAL}/post/${slug}`}
+        data-page-url={`${API_URL}/post/${slug}`}
         data-page-title={title}
         data-theme="auto"
       ></div>
