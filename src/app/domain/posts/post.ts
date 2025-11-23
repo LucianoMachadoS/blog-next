@@ -58,12 +58,11 @@ export type PostCategory = {
   publishedAt: string;
 };
 
-// 4. Autor (Pode ser nulo segundo seu JSON)
 export type PostAuthor = {
   id: PostID;
   documentId: string;
   name: string;
-} | null;
+};
 
 // 5. O Post Principal
 export type PostData = {
