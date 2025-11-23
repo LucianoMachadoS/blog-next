@@ -1,0 +1,6 @@
+.postDetails {
+  color: var(--color-gray);
+  font-size: var(--font-size-small);
+  margin: var(--spacing-medium);
+  font-style: italic;
+}
