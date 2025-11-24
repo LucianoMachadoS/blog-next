@@ -4,3 +4,8 @@
   margin: var(--spacing-medium);
   font-style: italic;
 }
+
+.linkCategory {
+  cursor: pointer;
+  color: var(--color-secondary);
+}

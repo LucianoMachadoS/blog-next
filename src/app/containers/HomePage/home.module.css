@@ -3,3 +3,12 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 3rem;
 }
+
+.headingCategory {
+  font-size: var(--font-size-large);
+  padding: var(--spacing-medium) 0;
+
+  span {
+    color: var(--color-secondary);
+  }
+}

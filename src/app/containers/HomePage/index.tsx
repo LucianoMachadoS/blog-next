@@ -4,23 +4,24 @@ import Header from '../../components/Header';
 import { MainContainer } from '@/app/components/MainContainer';
 import { PostCard } from '@/app/components/PostCard';
 import Footer from '@/app/components/Footer';
+import { Heading } from '@/app/components/Heading';
 
 export type HomePageProps = {
   posts: PostData[];
+  category?: string;
 };
 
-export default function HomePage({ posts }: HomePageProps) {
-  if (!posts || !Array.isArray(posts)) {
-    return (
-      <MainContainer>
-        <div>Nenhum post encontrado.</div>
-      </MainContainer>
-    );
-  }
-
+export default function HomePage({ posts, category }: HomePageProps) {
   return (
     <>
       <Header />
+      {category && (
+        <Heading>
+          <div className={styles.headingCategory}>
+            Categoria: <span>{category}</span>
+          </div>
+        </Heading>
+      )}
       <MainContainer>
         <div className={styles.container}>
           {posts.map((post: PostData) => (
