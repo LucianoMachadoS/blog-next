@@ -11,14 +11,23 @@ export async function generateMetadata({
   params,
 }: MetaDataProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const categoryName = decodeURIComponent(resolvedParams.name);
+
+  const categoryRaw = decodeURIComponent(resolvedParams.name);
+
+  const categoryName =
+    categoryRaw.charAt(0).toUpperCase() + categoryRaw.slice(1);
 
   return {
-    title: `Posts sobre ${categoryName} | Luciano Machado`,
+    title: `Categoria: ${categoryName}`,
+    description: `Veja todos os artigos sobre ${categoryName} no blog do Luciano Machado.`,
+
+    openGraph: {
+      title: `Posts sobre ${categoryName}`,
+      description: `Artigos e tutoriais sobre ${categoryName}.`,
+    },
   };
 }
 
-// 2. A Página
 export default async function CategoryPage(props: MetaDataProps) {
   const params = await props.params;
   const categoryName = decodeURIComponent(params.name);

@@ -26,10 +26,10 @@ export async function generateMetadata({
 
   return {
     title: post.title,
-    description: cleanDescription, // Agora o Google recebe texto puro!
+    description: cleanDescription,
     openGraph: {
       title: post.title,
-      description: cleanDescription, // O WhatsApp também agradece
+      description: cleanDescription,
       images: [
         {
           url: post.cover?.url || '',
