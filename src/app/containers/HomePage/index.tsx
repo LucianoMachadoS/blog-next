@@ -5,13 +5,25 @@ import { MainContainer } from '@/app/components/MainContainer';
 import { PostCard } from '@/app/components/PostCard';
 import Footer from '@/app/components/Footer';
 import { Heading } from '@/app/components/Heading';
+import Pagination from '@/app/components/Pagination';
+
+export type PaginationData = {
+  page: number;
+  pageCount: number;
+  basePath?: string;
+};
 
 export type HomePageProps = {
   posts: PostData[];
   category?: string;
+  pagination?: PaginationData;
 };
 
-export default function HomePage({ posts, category }: HomePageProps) {
+export default function HomePage({
+  posts,
+  category,
+  pagination,
+}: HomePageProps) {
   return (
     <>
       <Header />
@@ -34,6 +46,13 @@ export default function HomePage({ posts, category }: HomePageProps) {
             />
           ))}
         </div>
+        {pagination && (
+          <Pagination
+            page={pagination.page}
+            pageCount={pagination.pageCount}
+            basePath={pagination.basePath}
+          />
+        )}
       </MainContainer>
       <Footer />
     </>

@@ -1,0 +1,13 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacing-large) 0;
+  color: var(--color-secondary);
+}
+
+.info {
+  font-size: var(--font-size-small);
+  color: var(--color-gray);
+}
